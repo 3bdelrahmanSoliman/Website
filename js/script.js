@@ -1,9 +1,7 @@
 $(document).ready(function(){
   $(window).click(function() {
-    var video = $("#particles-js video")[0];  // Get the video element from within #particles-js
-    if (video) {
-        video.play();  // Play the video
-    }
+    var video = $("#particles-js video")[0];
+    video.muted = false;
 });
 
 
