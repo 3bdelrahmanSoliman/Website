@@ -3,7 +3,12 @@ $(document).ready(function(){
     var video = $("#particles-js video")[0];
     video.muted = false;
 });
-
+$(".serv video").click(function(){
+  var bg = $(this).attr("src");
+  var under =  $("#particles-js video").attr("src");
+  $(this).attr("src",under);
+  $("#particles-js video").attr("src", bg);
+});
 
     setTimeout(function() {
       $(".loading").css("display", "none");
