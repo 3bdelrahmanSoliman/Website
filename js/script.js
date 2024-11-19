@@ -10,6 +10,7 @@ $(".serv video").click(function(){
   $("#particles-js video").attr("src", bg);
 });
 
+
     setTimeout(function() {
       $(".loading").css("display", "none");
       $(".holder").css("opacity", "1");
