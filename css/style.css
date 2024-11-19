@@ -1,0 +1,1099 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.loading {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0%;
+  }
+  .holder{
+    opacity: 0;
+  }
+  .waviy {
+    position: relative;
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    animation: flip 2s ;
+    animation-delay: calc(.2s * var(--i));
+    animation-iteration-count: 3;
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+#particles-js{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+}
+canvas{
+    position: absolute;
+    top: 10%;
+}
+a:hover{
+    text-decoration: none ;
+    color: white;
+}
+.logo{
+    width: 250px !important;
+}
+header video{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+}
+nav{
+    width: 100%;
+    height: 13%;
+    background-color: transparent !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px .5%;
+    position: fixed !important;
+    z-index: 10;
+    transition:all .2s linear;
+    
+}
+
+li a{
+    margin-right: 20px !important;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: white !important;
+    display: inline-block;
+    position: relative;
+}
+.text{
+    position: relative;
+    top: 40%;
+    width: 100%;
+    height: 40%;
+}
+
+/* ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg */
+.word {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    color: white;
+    font: 700 normal 2.5em 'tahoma';
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+    text-align: center;
+  }
+.text h2{
+    color: white;
+    width: 100%;
+    font-weight: 200;
+    text-align: center;
+    padding: 0% 20%;
+}
+.text span{
+    color: blue;
+    font-size: 30px;
+    font-weight: 900;
+}
+li a::after {
+    content: '';
+    display: block; 
+    width: 0%;
+    height: 4px;
+    background-color: white;
+    transition: linear all .3s;
+    position: absolute;
+    left: 50%;
+    bottom: -20%;
+    border-radius: 5px;
+}
+li a:hover::after{
+    width: 130%;
+    left: -15%;
+}
+.sec{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.sec img{
+position: absolute;
+width: 100%;
+height: 100%;
+
+}
+.sec strong{
+    color: blue;
+    position: absolute;
+    font-size: 3rem;
+    left: 10%;
+    top: 25%;
+}
+.sec p{
+    position: absolute;
+    color: white;
+    top: 37%;
+    left: 10%;
+    font-size: 30px;
+    font-weight: 400;
+    width: 80%;
+}
+font{
+    font-size: 15px;
+}
+.sec button{
+    position: relative;
+    top: 70%;
+    left: 10%;
+    width: 150px;
+    height: 45px;
+    background-color: transparent;
+    z-index: 1;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid blue;
+}
+button div{
+position: absolute;
+background-color: blue;
+left: 0%;
+top: 0%;
+height: 100%;
+width: 0%;
+transition: linear all .3s;
+z-index: -1;
+}
+.sec button:hover div{
+width: 100%;
+}
+.sec a{
+    text-decoration: none !important;
+    color:white;
+    padding: 20px;
+    
+
+}
+a:hover{
+    color: white !important;
+}
+.sec2{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: rgb(18, 18, 18);
+    overflow: hidden;
+    display: flex;
+}
+.sec2 strong{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.pro1{
+    width: 30%;
+    height: 70vh;
+    margin-top: 10%;
+    margin-left: 35%;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.pro2{
+    width: 30%;
+    height: 70vh;
+    margin-top: 10%;
+    margin-left: 5%;    
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pro1 img {
+    position: absolute;
+    width: 100%;
+    transition: linear all .3s;
+}
+.pro2 img {
+    position: absolute;
+    width: 100%;
+    transition: linear all .5s;
+}
+.sec2 div:hover img{
+    transform: rotateX(20deg);
+    opacity: .5;
+}
+.sec2 div:hover .view{
+    top: 70%;
+}
+.sec2 div:hover hr{
+    width: 60%;
+}
+.view{
+    width: 100%;
+    height: 30%;
+    top: 90%;
+    transition: linear all .3s;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.692);
+}
+.view h2{
+    color: rgba(255, 255, 255, 0.854);
+}
+.view hr{
+    color: white;
+    background-color: white;
+    height: 10px;
+    opacity: 1;
+    width: 0%;
+    transition: linear all .5s;
+    transition-delay: .4s;
+}
+i{
+    color: white;
+    font-size: 50px;
+    margin-left: 20%;
+    opacity: 0;
+    transition: linear all .3s;
+    transition-delay: 1.2s;
+}
+.sec2 div:hover .view i{
+    opacity: 1;
+}
+.about{
+    width: 100%;
+    height: 100vh;
+    background-color: #101C26;
+    position: relative;
+    overflow: hidden;
+}
+.about strong{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    top: 5%;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.about p {
+    position: absolute;
+    top: 20%;
+    color: white;
+    width: 56%;
+    font-size: 15px;
+    left: 22%;
+    text-align: center;
+}
+.about .serv{
+width: 100%;
+position: relative;
+top: 10%;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+height: 80%;
+}
+.serv video{
+    width: 30%;
+}
+
+.p1{
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+    position: relative;
+    overflow: hidden;
+}
+.p1 p{
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    top: 0%;
+    justify-content: center;
+}
+.p1 span{
+    color: blue;
+    font-weight: 700;
+    font-size: 30px;
+}
+.mission{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+.mission img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 23%;
+    z-index: -1;
+}
+.text2{
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    top: 25%;
+}
+.text2 h2 {
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    text-align: center;
+    color: white;
+}
+.text2 span{
+    color: blue;
+    font-weight: 700;
+}
+.text3{
+    width: 100%;
+    height: 40vh;
+    background-color: #0e1621;
+    position: relative;
+    top: 60%;
+    overflow: hidden;
+}
+.text3 h2{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.text3 span{
+    color: blue;
+}
+.text3 p{
+    position: absolute;
+    top: 40%;
+    width: 60%;
+    left: 20%;
+    color: white;
+    text-align: center;
+}
+.gred{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+}
+.gred img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.gred h2,p{
+    position: absolute;
+    color: white;
+    width: 100%;
+    top: 30%;
+    font-weight: 200;
+    text-align: center;
+}
+.gred p {
+    top: 45%;
+    font-size: 18px;
+    width: 50%;
+    left: 25%;
+}
+.gred button{
+    position: relative;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    height: 45px;
+    background-color: transparent;
+    z-index: 1;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid blue;
+    transition: linear all .3s;
+}
+.gred button:hover{
+    border:  blue;
+}
+.gred div{
+position: absolute;
+background-color:  blue;
+left: 0%;
+top: 0%;
+height: 100%;
+width: 0%;
+transition: linear all .3s;
+z-index: -1;
+border-radius: 5px;
+}
+.gred button:hover div{
+width: 100%;
+}
+.gred a{
+    color:white;
+    padding: 20px;
+    text-decoration: none !important;
+}
+.adv{
+    width: 100%;
+    height: 80vh;
+    background-color: #0e1621;
+    position: relative;
+    overflow: hidden;
+}
+.adv h2{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    top: 15%;
+}
+.adv p{
+    position: relative;
+    margin-top: 2%;
+}
+.contact{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.contact img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+.contact h2{
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 3%;
+    font-size: 40px;
+}
+.contact span{
+    color: blue;
+    font-weight: 900;
+    font-size: 50px;
+}
+.contact p{
+    top: 12%;
+}
+.con{
+    width: 100%;
+    position: absolute;
+    height: 87%;
+    top: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0% 20%;
+}
+.info{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.info h4{
+    color: white;
+    
+}
+.info p{
+    color: white;
+    display: block;
+    position: relative;
+    text-align: start;
+    
+}
+.info span{
+    font-size: 30px;
+}
+.info i{
+    font-size: 20px;
+    color: blue;
+    padding: 0%;
+    margin: 0%;
+    margin-right:5px ;
+    opacity: 1;
+}
+form{
+    width: 60%;
+    height: 90%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding:0px 20px ;
+    
+}
+form h4{
+    font-size: 20px !important ;
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+form span{
+    font-size: 25px !important;
+    color: #9300F5;
+}
+form label{
+    color: white;
+    margin: 10px 0px;
+}
+form input{
+    background-color: transparent !important;
+    border: none;
+    border-bottom:2px solid white ;
+    height: 60px;
+    outline: none;
+    color: white;
+}
+.sub{
+    background-color: #9300f5;
+    width: 150px;
+    margin-left: 27%;
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    height: 50px;
+    opacity: .5;
+    transition: linear all .3s;
+}
+.sub:hover{
+    background-color: #9300F5;
+    opacity: 1;
+    color: white;
+}
+footer{
+    width: 100%;
+    height: 10vh;
+    background-color: #0e1621;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+footer h6{
+    color: white !important;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+.goUp{
+    position: fixed;
+    left: 95%;
+    top: 90%;
+    opacity: 0;
+    transition: linear all .3s;
+}
+i{
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    margin: 0%;
+    opacity: 1;
+    position: relative;
+    background-color: transparent;
+    border-radius:50% ;
+}
+.goUp i{
+    font-size: 30px;
+    color: white;
+    padding: 5px;
+    margin: 0%;
+    opacity: 1;
+    position: relative;
+    background-color: blue;
+    border-radius:50% ;
+}
+textarea{
+    background-color: transparent !important;
+    border: none;
+    border-bottom: 2px solid white;
+    height: 60px;
+    outline: none;
+    color: white;
+    
+}
+.ad{
+    color: white;
+    text-decoration: none;
+}
+.ad:hover{
+    color: white;
+}
+.social{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0% 37%;
+    box-sizing: border-box;
+}
+.social i{
+    font-size: 30px;
+    color: white;
+    padding: 5px;
+    margin: 0%;
+    opacity: 1;
+    position: relative;
+    background-color: #b5b54f;
+    border-radius:50% ;
+}
+.log1{
+    right: 0%;
+    display: block !important;
+    position: absolute !important;
+    
+}
+.log2{
+    right: 0%;
+    display: none !important;
+    position: absolute !important;
+    
+}
+.logout{
+    background-color: black !important;
+}
+.logout a{
+    color: blue !important;
+}
+.logout a:hover{
+    background-color: blue;
+    color: white !important;
+}
+.send{
+    position: relative;
+    width: 100%;
+    height: 10vh !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.send input{
+    width: 200px;
+    margin-top: 10px;
+}
+
+
+@media (max-width:1000px){
+    nav{
+        background-color: black !important;
+        height: 16.5%;
+    }
+    .logo{
+        width: 150px !important;
+    }
+    .offcanvas-body{
+        background-color:rgba(32, 32, 32, 0.518) !important;
+    }
+    .offcanvas-header{
+        background-color: black !important;
+    }
+
+    .text h2{
+        font-size: 23px;
+        position: relative;
+        font-weight: 500;
+    }
+    .text span{
+        font-size: 15px;
+    }
+    #navbarNav{
+        width: 70%;
+        display: block;
+        position: absolute;
+        background-color: rgb(13, 10, 46);
+        top: 65%;
+        left: 100%;
+        height: 200vh;
+        margin-top: 6%;
+        transition: linear all .5s;
+    }
+    #offcanvasNavbar2{
+        width: 75%;
+    }
+    hr{
+        color: white;
+        background-color: white;
+        margin: 0;
+        opacity: .5;
+    }
+    li a{
+        padding: 7% 0% 7% 0% !important;
+    }
+    li a:hover::after{
+        width: 0%;
+        left: 0%;
+    }
+    strong{
+        font-size: 35px;
+    }
+    .sec p{
+        width: 90%;
+        font-size: 18px;
+    }
+    .sec2{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .sec2 strong{
+        font-size: 35px;
+    }
+    .pro1{
+        margin-top: 20%;
+    }
+    .pro2{
+        margin-top: 20%;
+    }
+    .sec2 div{
+        margin-left: 5%;
+        width: 90%;
+    }
+    .view{
+        position: relative;
+        width: 100% !important;
+        margin-left: 0% !important;
+    }
+    .serv p{
+        padding-top: 2%;
+    }
+    .about{
+        height: 150vh;
+    }
+    .about strong{
+        font-size: 30px;
+    }
+    .about p{
+        font-size: 15px;
+        width: 90%;
+        left: 1%;
+        top: 15%;
+    }
+    .about .serv{
+        padding: 0%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .about-img{
+        padding: 0% 5%;
+    }
+    .p1 p{
+        font-size: 20px;
+    }
+    .p1 span{
+        font-size: 25px;
+    }
+    .text2 h2 {
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        font-size: 22px;
+    }
+    .text2 span{
+        color: blue;
+        font-weight: 700;
+    }
+    .text3 h2 {
+        top: 10%;
+    }
+    .text3 p{
+        position: absolute;
+        top: 25%;
+        width: 90%;
+        left: 5%;
+        color: white;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 200;
+    }
+    .gred h2{
+        top: 20%;
+    }
+    .gred button{
+        top: 80%;
+    }
+    .gred p {
+        top: 40%;
+        font-size: 18px;
+        width: 90%;
+        left: 5%;
+    }
+    .adv p{
+        width: 90%;
+        left: 5%;
+        font-size: 13px;
+    }
+    .con{
+        flex-direction: column;
+        padding: 0% 5%;
+        height: 78%;
+    }
+    .contact{
+        height: 190vh;
+    }
+    .contact h2{
+        top: 10%;
+    }
+    .contact p{
+        top: 20%;
+        width: 70%;
+        left: 15%;
+    }
+    .info{
+        width: 100%;
+        margin: 15% 0px;
+        flex-direction: row;
+    }
+    .info p{
+        font-size: 15px;
+        width: 100%;
+        left: 2%;
+    }
+    form{
+        width: 100%;
+        overflow: scroll;
+    }
+        form::-webkit-scrollbar{
+            display: none !important;
+        }
+    .sub{
+        margin-left: 35%;
+    }
+    .goUp{
+        left: 90%;
+
+    }
+
+
+
+
+    @media (max-width:600px){
+        nav{
+            background-color: black !important;
+            height: 16.5%;
+        }
+        .logo{
+            width: 150px !important;
+        }
+        .offcanvas-body{
+            background-color:rgba(32, 32, 32, 0.518) !important;
+        }
+        .offcanvas-header{
+            background-color: black !important;
+        }
+        .text h2{
+            font-size: 10px;
+            position: relative;
+            font-weight: 500;
+        }
+        .text span{
+            font-size: 15px;
+        }
+        #navbarNav{
+            width: 70%;
+            display: block;
+            position: absolute;
+            background-color: rgb(13, 10, 46);
+            top: 65%;
+            left: 100%;
+            height: 200vh;
+            margin-top: 6%;
+            transition: linear all .5s;
+        }
+        #offcanvasNavbar2{
+            width: 75%;
+        }
+        hr{
+            color: white;
+            background-color: white;
+            margin: 0;
+            opacity: .5;
+        }
+        li a{
+            padding: 7% 0% 7% 0% !important;
+        }
+        li a:hover::after{
+            width: 0%;
+            left: 0%;
+        }
+        strong{
+            font-size: 35px;
+        }
+        .sec p{
+            width: 90%;
+            font-size: 18px;
+        }
+        .sec2{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .sec2 strong{
+            font-size: 35px;
+        }
+        .sec2 div{
+            margin-left: 5%;
+            width: 90%;
+        }
+        .pro1{
+            margin-top: 20%;
+        }
+        .pro2{
+            margin-top: 5%;
+        }
+        .sec2 div{
+            margin-left: 0%;
+            width: 100%;
+        }
+        .serv{
+            flex-direction: column;
+            margin-top: 10px;
+        }
+        .serv video{
+            width: 100%;
+            
+        }
+        .about strong{
+            font-size: 30px;
+        }
+        .about p{
+            font-size: 13px;
+            width: 100%;
+            left: 0%;
+            top: 15%;
+        }
+        .about .serv{
+            padding: 0%;
+            top: 10%;
+        }
+        .about-img{
+            padding: 0% 5%;
+        }
+        .p1 p{
+            font-size: 20px;
+        }
+        .p1 span{
+            font-size: 25px;
+        }
+        .text2 h2 {
+            width: 90%;
+            position: absolute;
+            left: 5%;
+            font-size: 22px;
+        }
+        .text2 span{
+            color: #9300F5;
+            font-weight: 700;
+        }
+        .text3 h2 {
+            top: 10%;
+            font-size: 30px;
+        }
+        .text3 p{
+            position: absolute;
+            top: 25%;
+            width: 90%;
+            left: 5%;
+            color: white;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 200;
+        }
+        .gred h2{
+            top: 20%;
+            font-size: 25px;
+        }
+        .gred button{
+            top: 80%;
+        }
+        .gred p {
+            top: 40%;
+            font-size: 18px;
+            width: 90%;
+            left: 5%;
+        }
+        .adv p{
+            width: 90%;
+            left: 5%;
+            font-size: 13px;
+        }
+        .con{
+            flex-direction: column;
+            padding: 0% 5%;
+            top:20%;
+        }
+        .contact{
+            height: 130vh;
+        }
+        .contact h2{
+            top: 5%;
+        }
+        .contact p{
+            top: 15%;
+            width: 70%;
+            left: 15%;
+        }
+        .info{
+            width: 100%;
+            margin-bottom: 15%;
+        }
+        .info p{
+            font-size: 15px;
+            width: 100%;
+            left: 2%;
+        }
+        form{
+            width: 100%;
+        }
+        .sub{
+            margin-left: 30%;
+        }
+        .goUp{
+            left: 90%;
+    
+        }
+        #bt{
+    top: 70%;
+    }
+
+    }
+
+}
+
+
